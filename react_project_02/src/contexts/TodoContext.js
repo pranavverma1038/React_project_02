@@ -15,9 +15,9 @@ export const TodoContext = createContext({
     toggleComplete:(id)=>{}
 })
 
-
+//creating a custom hook
 export const useTodo=()=>{
     return useContext(TodoContext)
 }
-
+// provider wraps the part of the app that needs to be accessed
 export const TodoProvider= TodoContext.Provider
